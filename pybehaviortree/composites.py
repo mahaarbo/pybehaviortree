@@ -3,7 +3,7 @@ This module defines four common decorator nodes for the minimal behavior tree.
 """
 __author__ = "Mathias Hauan Arbo"
 __copyright__ = "Copyright (C) 2024 SINTEF Manufacturing"
-__license__ = "LGPL-3.0-or-later"
+__license__ = "LGPL-2.1-or-later"
 from .base_classes import ResultType, TickInfo, BaseNode
 
 class SequenceNode(BaseNode):
