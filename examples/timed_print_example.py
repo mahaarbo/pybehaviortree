@@ -75,7 +75,7 @@ end_time = time.time()
 total_time = end_time - start_time
 print("Total time:", total_time)
 print("Number of ticks:", num_ticks)
-print("Time per tick:", 1000*total_time/num_ticks, "ms")
+print("Time per tick:", 1e6*total_time/num_ticks, "microseconds")
 print("Tick frequency:", num_ticks/total_time)
 
 # This TickInfo object is basically what is propagated down the tree
