@@ -133,7 +133,7 @@ class MemSelectorNode(BaseNode):
             status = self.children[idx]._execute(tick_info)
             if status == ResultType.RUNNING:
                 tick_info.blackboard.set(
-                    "running_child-idx",
+                    "running_child_idx",
                     idx,
                     tick_info.tree.id,
                     self.id
