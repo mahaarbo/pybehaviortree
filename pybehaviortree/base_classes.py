@@ -168,7 +168,8 @@ class TickInfo:
 
         :param node: The node closing during the tick.
         """
-        self.open_nodes.pop()
+        if node.id == self.open_nodes[-1].id:
+            self.open_nodes.pop()
 
 class BehaviorTree:
     """
